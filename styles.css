@@ -511,7 +511,7 @@ body {
 }
 
 /* ========== Laptops & MacBooks (1440px) ========== */
-@media (max-width: 1440px) {
+@media (max-width: 1680px) {
   .hero-section {
     height: 1100px;
   }
@@ -583,14 +583,6 @@ body {
   .last-section-button {
     display: none;
   }
-}
-
-/* ========== Regular Laptops (1366px) ========== */
-@media (max-width: 1366px) {
-}
-
-/* ========== Tablets & Small Laptops (1024px) ========== */
-@media (max-width: 1024px) {
 }
 
 /* ========== Tablets (768px) ========== */
