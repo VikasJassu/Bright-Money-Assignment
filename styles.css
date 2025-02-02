@@ -34,6 +34,7 @@ body {
   text-align: center;
 }
 .header {
+  z-index: 1100;
   width: 76%;
   height: 62px;
   position: fixed;
@@ -44,15 +45,15 @@ body {
     rgba(236, 236, 236, 0.03) 108.29%
   );
   backdrop-filter: blur(60px);
-  border: 1.06px solid transparent; /* Set a transparent border */
+  border: 1.06px solid transparent;
   border-image-source: linear-gradient(
     100.29deg,
     rgba(255, 255, 255, 0.5) 2.48%,
     rgba(0, 0, 0, 0) 107.96%
   );
   border-radius: 12px;
-  border-image-slice: 1; /* Required for border-image to work */
-  border-image-repeat: stretch; /* Ensures the gradient stretches */
+  border-image-slice: 1; 
+  border-image-repeat: stretch;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +65,7 @@ body {
   padding-left: 90px;
 }
 .header div:last-child {
-  padding-right: 90px;
+  padding-right: 50px;
 }
 .header div:last-child p {
   color: #787f88;
@@ -140,11 +141,16 @@ body {
   z-index: 0;
   margin: auto;
 }
+.hero-section-card > img {
+  position: relative;
+  z-index: 1000;
+  margin-left: 90px;
+}
 .hero-section-card-circles {
   width: 100%;
   position: absolute;
-  z-index: 1000;
-  bottom: 0;
+  z-index: 100;
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -479,7 +485,7 @@ body {
 .note {
   color: #787f88;
   font-size: 16px;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   line-height: 18.56px;
   text-align: left;
   text-underline-position: from-font;
