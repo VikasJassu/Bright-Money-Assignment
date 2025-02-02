@@ -52,7 +52,7 @@ body {
     rgba(0, 0, 0, 0) 107.96%
   );
   border-radius: 12px;
-  border-image-slice: 1; 
+  border-image-slice: 1;
   border-image-repeat: stretch;
   display: flex;
   justify-content: space-between;
@@ -141,6 +141,9 @@ body {
   z-index: 0;
   margin: auto;
 }
+.hero-section-card-small {
+  display: none;
+}
 .hero-section-card > img {
   position: relative;
   z-index: 1000;
@@ -183,7 +186,6 @@ body {
   font-weight: 400;
 }
 .features-section-cards {
-  width: 90%;
   margin: auto;
 }
 .features-section-cards,
@@ -193,7 +195,7 @@ body {
   align-items: center;
 }
 .features-section-cards > div {
-  width: 25%;
+  width: 30%;
 }
 .features-section-cards > div > p {
   color: #787f88;
@@ -215,7 +217,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 52px 0px;
 }
 .featured-by-section div:first-child {
@@ -244,7 +245,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 90px;
+  gap: 140px;
 }
 .pay-guide-section-cards:nth-child(4) {
   display: flex;
@@ -260,7 +261,6 @@ body {
 .pay-guide-section-cards > img {
   margin: -48px;
 }
-
 .pay-guide-section-cards-content p:nth-of-type(1) {
   color: #17c95f;
   font-size: 24px;
@@ -297,6 +297,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 55px;
 }
 .pay-guide-section-cards-button > p {
   color: #0e1e14;
@@ -308,7 +309,8 @@ body {
   text-decoration-skip-ink: none;
 }
 .pay-guide-sub-section {
-  direction: flex;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .pay-guide-sub-section > hr:nth-child(1),
@@ -501,4 +503,450 @@ body {
 }
 .note {
   margin-top: 25px;
+}
+
+/* ========== Laptops & MacBooks (1440px) ========== */
+@media (max-width: 1440px) {
+  .hero-section {
+    height: 1100px;
+  }
+  .hero-section-card {
+    height: 630px;
+  }
+  .hero-section-text {
+    font-size: 75px;
+  }
+  .hero-section-checkbox > div > p {
+    font-size: 20px;
+  }
+  .hero-section-card-circles {
+    scale: 0.8;
+    bottom: -76px;
+    left: 34%;
+  }
+  .hero-section-card > img {
+    scale: 0.8;
+    bottom: 90px;
+  }
+  .features-section-heading,
+  .pay-guide-section-heading {
+    font-size: 54px;
+  }
+  .features-section-cards > div > p,
+  .card-swiper-section > div:first-child > p:nth-of-type(2),
+  .pay-guide-section-cards-content p:nth-of-type(1) {
+    font-size: 20px;
+  }
+  .features-section-cards > div {
+    width: 40%;
+  }
+  .featured-by-section {
+    width: 70%;
+  }
+  .pay-guide-section-cards-content p:nth-of-type(2) {
+    font-size: 36px;
+  }
+  .pay-guide-section-cards-content p:nth-of-type(3) {
+    font-size: 24px;
+  }
+  .features-section-heading,
+  .pay-guide-section-heading,
+  .card-swiper-section > div:first-child > p:nth-of-type(1) {
+    font-size: 54px;
+  }
+  .features-section-cards > div {
+    width: 30%;
+  }
+  .features-section-cards > div > p {
+    font-size: 20px;
+  }
+  .swiper-card {
+    width: 220px;
+  }
+  .last-section > div > p {
+    font-size: 50px;
+    width: 95%;
+    margin-left: 85px;
+  }
+  .last-section-circles {
+    width: 64%;
+  }
+  .faq-heading {
+    font-size: 54px;
+  }
+}
+
+/* ========== Regular Laptops (1366px) ========== */
+@media (max-width: 1366px) {
+}
+
+/* ========== Tablets & Small Laptops (1024px) ========== */
+@media (max-width: 1024px) {
+}
+
+/* ========== Tablets (768px) ========== */
+
+/* ========== Mobile Devices (480px & Below) ========== */
+@media (max-width: 480px) {
+  .header {
+    width: 95%;
+    top: 25px;
+  }
+  .hero-section-sub-section {
+    transform: translateY(150px);
+    gap: 35px;
+  }
+  .header div:first-child {
+    padding-left: 10px;
+  }
+  .hero-button {
+    background-color: #0e1e14;
+    padding: 12px 36px 12px 36px;
+    gap: 10px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    transform: translateY(185px);
+    width: 90%;
+    margin: auto;
+  }
+  .hero-button > p {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .header div:last-child {
+    padding-right: 10px;
+  }
+  .hero-section {
+    height: 700px;
+  }
+  .header-store-icons {
+    gap: 0;
+  }
+  .header div:last-child p {
+    display: none;
+  }
+  .hero-section-card {
+    display: none;
+  }
+  .hero-section-card-small {
+    display: block;
+    margin-top: 210px;
+  }
+  .hero-section-text {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1px;
+  }
+  .hero-section-checkbox {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero-section-checkbox > div > p {
+    font-size: 16.35px;
+    line-height: 16.35px;
+    letter-spacing: -0.02em;
+  }
+  .hero-section-checkbox > div > svg {
+    width: 20px;
+    height: 17px;
+  }
+  .hero-section-card-circles {
+    scale: 0.8;
+    bottom: -76px;
+    left: 34%;
+  }
+  .hero-section-card > img {
+    scale: 0.8;
+    bottom: 90px;
+  }
+  .features-section-cards > div > p,
+  .card-swiper-section > div:first-child > p:nth-of-type(2),
+  .pay-guide-section-cards-content p:nth-of-type(1) {
+    font-size: 20px;
+  }
+  .features-section-cards > div {
+    width: 40%;
+  }
+  .featured-by-section {
+    width: 70%;
+  }
+  .pay-guide-section-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 140px;
+  }
+
+  .pay-guide-section-cards-content p:nth-of-type(2) {
+    font-size: 36px;
+  }
+  .pay-guide-section-cards-content p:nth-of-type(3) {
+    font-size: 24px;
+  }
+  .features-section-heading,
+  .pay-guide-section-heading,
+  .card-swiper-section > div:first-child > p:nth-of-type(1) {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1px;
+  }
+  .features-section {
+    width: 80%;
+  }
+  .features-section-cards {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .features-section-cards > div {
+    width: 95%;
+    gap: 30px;
+  }
+  .features-section-cards > div > img {
+    width: 33%;
+  }
+  .features-section-cards div:nth-child(2) img {
+    margin-left: 13px;
+  }
+
+  .features-section-cards > div > p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+  .featured-by-section {
+    width: 90%;
+    padding: 12px 0px;
+  }
+  .featured-by-section div:first-child {
+    font-size: 5.61px;
+    line-height: 6.78px;
+    letter-spacing: 0.02em;
+  }
+  .featured-by-section > img {
+    width: 10%;
+  }
+
+  .pay-guide-section {
+    padding: 60px 20px; /* Reduce padding for smaller screens */
+  }
+
+  .pay-guide-section-heading {
+    font-size: 32px; /* Reduce heading font size */
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .pay-guide-sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pay-guide-section-cards {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .pay-guide-section-cards:nth-child(4) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .pay-guide-section-cards img {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .pay-guide-section-cards-content p:nth-of-type(1) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .pay-guide-section-cards-content p:nth-of-type(2) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .pay-guide-section-cards-content p:nth-of-type(3) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .pay-guide-section-cards-button {
+    justify-content: center;
+    margin-top: 20px;
+    width: auto;
+  }
+
+  .pay-guide-section-cards-button p {
+    font-size: 18px;
+  }
+
+  .pay-guide-sub-section > hr:nth-child(1) {
+    border: 2px solid #f4f5f8;
+    width: 100%;
+    margin: 40px 0px 30px 0px;
+  }
+
+  .pay-guide-sub-section > hr:nth-child(3),
+  .pay-guide-sub-section > hr:nth-child(5) {
+    display: none;
+  }
+
+  .card-swiper-section {
+    margin-top: 50px; /* Reduce top margin */
+    padding: 0 20px; /* Add padding for spacing */
+    text-align: center; /* Center align content */
+  }
+
+  .card-swiper-section > div:first-child p {
+    text-align: center;
+  }
+
+  .card-swiper-section > div:first-child > p:nth-of-type(1) {
+    font-size: 36px; /* Reduce font size */
+    line-height: 42px;
+  }
+
+  .card-swiper-section > div:first-child > p:nth-of-type(2) {
+    font-size: 18px; /* Reduce font size */
+    line-height: 30px;
+  }
+
+  .swiper-container {
+    width: max-content;
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px; /* Add spacing between cards */
+    margin-top: 50px;
+  }
+
+  .swiper-card {
+    width: 90%; /* Make cards take full width */
+    max-width: 320px;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .swiper-card-content {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .swiper-card-name {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .swiper-card > img {
+    width: 50%;
+    margin: auto; /* Center images */
+  }
+  .faq {
+    align-items: center;
+  }
+  .faq-heading {
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: -1px;
+  }
+  .faq > p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    width: 80%;
+  }
+  .faq > img {
+    width: 20px;
+  }
+  .footer-container {
+    width: 90%; /* Reduce width for better mobile fit */
+    padding: 60px 0px; /* Reduce padding */
+  }
+
+  .footer-container p {
+    font-size: 14px; /* Reduce font size for readability */
+    line-height: 20px;
+    text-align: center; /* Center align for better mobile UI */
+  }
+
+  .footer-container p:nth-of-type(2) {
+    margin-bottom: 25px;
+  }
+
+  .footer-container ol {
+    padding-left: 20px; /* Add padding for better spacing */
+  }
+
+  .footer-container ol li {
+    font-size: 14px; /* Reduce font size */
+    line-height: 22px; /* Adjust line height */
+    text-align: left;
+  }
+
+  .highlight-text {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px; /* Adjust font size */
+  }
+  .last-section {
+    height: 550px;
+  }
+  .last-section > div {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .last-section > div > p {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: auto;
+    margin-top: 54px;
+  }
+  .last-section-circles {
+    display: none;
+  }
+  .last-section-button {
+    background-color: #0e1e14;
+    padding: 12px 36px 12px 36px;
+    gap: 10px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .last-section-button > p {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .last-section > div > img:last-child {
+    scale: 1.2;
+    margin-top: 80px;
+  }
 }
