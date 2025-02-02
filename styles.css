@@ -28,6 +28,7 @@ body {
   min-height: 100vh;
   background-color: white;
   font-family: "Gilroy", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -504,6 +505,10 @@ body {
 .note {
   margin-top: 25px;
 }
+.last-section > div > img:last-child,
+.last-section-button {
+  display: none;
+}
 
 /* ========== Laptops & MacBooks (1440px) ========== */
 @media (max-width: 1440px) {
@@ -574,6 +579,10 @@ body {
   .faq-heading {
     font-size: 54px;
   }
+  .last-section > div > img:last-child,
+  .last-section-button {
+    display: none;
+  }
 }
 
 /* ========== Regular Laptops (1366px) ========== */
@@ -585,7 +594,288 @@ body {
 }
 
 /* ========== Tablets (768px) ========== */
+@media (max-width: 768px) {
+  .header {
+    width: 95%;
+    top: 25px;
+  }
+  .hero-section-text {
+    font-size: 62px;
+  }
+  .hero-section-checkbox {
+    width: 90%;
+  }
+  .hero-section-card-small {
+    display: block;
+    margin-top: 210px;
+    margin-bottom: 180px;
+  }
+  .hero-section-card-small > img {
+    width: 90vw;
+  }
+  .hero-section-card,
+  .hero-button {
+    display: none;
+  }
+  .features-section {
+    margin-top: 200px;
+    width: 90%;
+  }
 
+  .features-section-heading,
+  .pay-guide-section-heading {
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  .features-section-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .features-section-cards > div {
+    width: 30%;
+  }
+
+  .features-section-cards > div > p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .features-section-cards > div > img {
+    width: 60px;
+  }
+  .featured-by-section div:first-child {
+    font-size: 12px;
+    line-height: 6.78px;
+    letter-spacing: 0.02em;
+  }
+  .featured-by-section > img {
+    width: 12%;
+  }
+  .featured-by-section {
+    width: 80%;
+    padding: 16px 0px;
+  }
+  .pay-guide-section {
+    padding: 60px 20px;
+  }
+
+  .pay-guide-section-heading {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .pay-guide-sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pay-guide-section-cards {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .pay-guide-section-cards:nth-child(4) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .pay-guide-section-cards img {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .pay-guide-section-cards-content p:nth-of-type(1) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .pay-guide-section-cards-content p:nth-of-type(2) {
+    font-size: 31px;
+    line-height: 36px;
+  }
+
+  .pay-guide-section-cards-content p:nth-of-type(3) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .pay-guide-section-cards-button {
+    justify-content: center;
+    margin-top: 20px;
+    width: auto;
+  }
+
+  .pay-guide-section-cards-button p {
+    font-size: 18px;
+  }
+
+  .pay-guide-sub-section > hr:nth-child(1) {
+    border: 2px solid #f4f5f8;
+    width: 100%;
+    margin: 40px 0px 30px 0px;
+  }
+  .pay-guide-sub-section > hr:nth-child(3),
+  .pay-guide-sub-section > hr:nth-child(5) {
+    display: none;
+  }
+
+  .card-swiper-section {
+    margin-top: 50px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .card-swiper-section > div:first-child p {
+    text-align: center;
+  }
+
+  .card-swiper-section > div:first-child > p:nth-of-type(1) {
+    font-size: 44px;
+    line-height: 42px;
+  }
+
+  .card-swiper-section > div:first-child > p:nth-of-type(2) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .swiper-container {
+    width: max-content;
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .swiper-card {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .swiper-card-content {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .swiper-card-name {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .swiper-card > img {
+    width: 50%;
+    margin: auto; /* Center images */
+  }
+  .faq {
+    align-items: center;
+  }
+  .faq-heading {
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: -1px;
+  }
+  .faq > p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    width: 80%;
+  }
+  .faq > img {
+    width: 20px;
+  }
+  .footer-container {
+    width: 90%; /* Reduce width for better mobile fit */
+    padding: 60px 0px; /* Reduce padding */
+  }
+
+  .footer-container p {
+    font-size: 14px; /* Reduce font size for readability */
+    line-height: 20px;
+    text-align: center; /* Center align for better mobile UI */
+  }
+
+  .footer-container p:nth-of-type(2) {
+    margin-bottom: 25px;
+  }
+
+  .footer-container ol {
+    padding-left: 20px; /* Add padding for better spacing */
+  }
+
+  .footer-container ol li {
+    font-size: 14px; /* Reduce font size */
+    line-height: 22px; /* Adjust line height */
+    text-align: left;
+  }
+
+  .highlight-text {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px; /* Adjust font size */
+  }
+  .last-section {
+    height: 550px;
+  }
+  .last-section > div {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .last-section > div > p {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: auto;
+    margin-top: 54px;
+  }
+  .last-section-circles {
+    display: none;
+  }
+  .last-section-button {
+    background-color: #0e1e14;
+    padding: 12px 36px 12px 36px;
+    gap: 10px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  .last-section-button > p {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .last-section > div > img:last-child {
+    display: block;
+    scale: 1.2;
+    margin-top: 108px;
+  }
+}
 /* ========== Mobile Devices (480px & Below) ========== */
 @media (max-width: 480px) {
   .header {
@@ -609,6 +899,7 @@ body {
     transform: translateY(185px);
     width: 90%;
     margin: auto;
+    justify-content: center;
   }
   .hero-button > p {
     color: white;
@@ -646,6 +937,7 @@ body {
   .hero-section-checkbox {
     flex-direction: column;
     gap: 30px;
+    align-items: start;
   }
   .hero-section-checkbox > div > p {
     font-size: 16.35px;
@@ -823,14 +1115,6 @@ body {
     line-height: 30px;
   }
 
-  .swiper-container {
-    width: max-content;
-    overflow-x: scroll;
-    display: flex;
-    gap: 20px; /* Add spacing between cards */
-    margin-top: 50px;
-  }
-
   .swiper-card {
     width: 90%; /* Make cards take full width */
     max-width: 320px;
@@ -935,6 +1219,7 @@ body {
     width: 90%;
     margin: auto;
     margin-top: 15px;
+    justify-content: center;
   }
   .last-section-button > p {
     color: white;
