@@ -36,6 +36,8 @@ body {
 }
 #getStartedButton {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .header {
   z-index: 1100;
@@ -69,7 +71,7 @@ body {
   padding-left: 90px;
 }
 .header div:last-child {
-  padding-right: 50px;
+  padding-right: 78px;
 }
 .header div:last-child p {
   color: #787f88;
