@@ -34,6 +34,9 @@ body {
 .container {
   text-align: center;
 }
+#getStartedButton {
+  cursor: pointer;
+}
 .header {
   z-index: 1100;
   width: 76%;
