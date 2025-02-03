@@ -42,3 +42,11 @@ testimonials.forEach((testimonial) => {
       </div>
     `;
 });
+
+function trackButtonClick() {
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    event: "get_started_click",
+    button_id: "getStartedButton",
+  });
+}
